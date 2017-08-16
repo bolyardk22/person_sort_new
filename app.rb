@@ -6,19 +6,9 @@ get '/' do
 end
 
 post '/pairs_out' do
-   names = params.values
+   names = params[:text]
    names_two = clean(shuffle_names(names))
    erb :output, :locals => {:names_two=>names_two}
-end
-
-get '/enter_names' do
-	names_two = params[:names_two]
-	erb :enter_names, :locals=> {:names_two=>names_two}
-end
-
-post '/enter_names' do
-	names_two = params[:names_two]
-	redirect '/output?num1=' + num1
 end
 
 get '/output' do
@@ -26,7 +16,7 @@ get '/output' do
 	erb :output, :locals=> {:names_two=>names_two}
 end
 
-post '/output' do
+post '/action_page' do
 	names_two = params[:names_two]
+	erb :lastpage, :locals=> {:names_two=>names_two}
 end
-

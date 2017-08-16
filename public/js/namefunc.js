@@ -4,7 +4,7 @@ function nameFunction() {
        for (var i = 1; i <= x; i++) {
            var input = document.createElement("input");
            input.type = "text";
-           input.name = "text" + i;
+           input.name = "text[]";
            input.id = "nameJava";
            
            input.required = true;
