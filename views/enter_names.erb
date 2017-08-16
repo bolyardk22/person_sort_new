@@ -1,0 +1,42 @@
+<link rel="stylesheet" type "text/css" href="css/style.css">
+
+<!doctype HTML5>
+<html lang="en">
+
+<div id="theNavBar">
+	<ul id="options">
+		<ul id="home"><a class="one" href="/">Name Sorter</a></ul>
+		<div id="optionsdiv">
+			<ul id="options">
+				<li><a class="links" href="#">Social Media Links</a>
+					<ul>
+						<li><a class="facebook" href="https://www.facebook.com/minedmindsfoundation/" target = "_blank">Facebook</a></li>
+						<li><a class="twitter" href= "https://twitter.com/MinedMinds" target = "_blank">Twitter</a></li>
+					</ul>
+				</li>
+				<li><a class="about" href="http://www.minedminds.org" target = "_blank">About Mined Minds</a></li>
+				<li><a class="contact" href="http://www.minedminds.org/contact" target = "_blank">Contact Mined Minds</a></li>
+			</ul>
+		</div>
+	</ul>
+</div>
+
+<body>
+	<div id="question">
+		How many people are in your party?
+		<form method = "post" action = "pairs_out" id = "text_box">
+			<input type ="number" min = 4 max = 99 autofocus = "autofocus" id ="nameList" oninput = "nameFunction()" >
+			<p id = "demo"></p>
+			<input type = "submit">
+		</form>
+	</div>
+</body>
+
+<script src = "js/namefunc.js"></script>
+
+<div id="bottomstuff">
+	
+</div>
+
+</html>
+
